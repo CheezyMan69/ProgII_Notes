@@ -5,6 +5,7 @@
     - If...Else
     - Nested If-else Statements
     - Switch cases
+    - Loops - While , do-while
    These operate and start functioning when they meet a specific condition
    or criteria. If their condition is not met, then they do not run and moves to the
    next segment of code.
@@ -85,12 +86,13 @@ public class Lesson2_ControlStatements {
         int marks = input.nextInt();
         char grade;
         switch (marks/10){
-            case 10:
+            case 10:                //if marks/10 = 10 it will run case 9 this is because there is no break
             case 9: grade = 'A';
                 break;
             case 8: grade = 'B';
                 break;
-            case 7:
+            case 7:                 //if marks/10 = 7 it will run case 6, if there is no break it will execute
+                                    // the next until it hits a break
             case 6: grade = 'C';
                     break;
             case 5:
@@ -100,6 +102,7 @@ public class Lesson2_ControlStatements {
         }
         System.out.println("Your grade is "+grade);
         */
+
         // Age calc
         /*
         Scanner input = new Scanner(System.in);
@@ -116,5 +119,25 @@ public class Lesson2_ControlStatements {
         }
         */
 
+        //Loops - i'll add more in a bit
+        double i = 10;
+        double n =1;
+        while (i<21){
+            n *= i;
+            i++;
+        }
+        System.out.println("Product = "+n);
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter beginning number: ");
+        double start = input.nextDouble();
+        System.out.println("Enter end number: ");
+        double end = input.nextDouble();
+        double temp = 0;
+        while (start<(end+1)){
+            temp+= start;
+            start ++;
+        }
+        System.out.println("Sum of range -> "+temp);
     }
 }
