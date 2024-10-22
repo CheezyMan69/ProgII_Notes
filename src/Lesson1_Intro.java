@@ -1,5 +1,6 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import  java.util.Scanner; //This library allows us to read input from the user
+
 public class Lesson1_Intro {
     public static void main(String[] args) {
         System.out.println("\nHello World, welcome to ProgII Notes\n");
@@ -8,6 +9,8 @@ public class Lesson1_Intro {
             multi
          */
 
+        //Variable Types
+        /*
         byte byteValue = 10; // range -> -178 to 127
         short shortValue = 1000;
         byte byteValue2 = 100;
@@ -33,8 +36,11 @@ public class Lesson1_Intro {
         System.out.println("booleanValue -> "+booleanValue);
         System.out.println("Char -> "+charValue);
 
+         */
+
         //Operators --------------------------
         //Arithmetic + - * / %
+        /*
         int n1 = 20;
         int n2 = 5;
         int sum = n1 + n2;
@@ -69,7 +75,10 @@ public class Lesson1_Intro {
         n3 %= 5;
         System.out.println("Remaindered n3 -> "+n3);
 
+
+         */
         //Comparison < > <= >= == !=
+        /*
         double a = 69.420;
         double b = 420.69;
         System.out.println("\na smaller than b? "+(a<b));
@@ -80,6 +89,20 @@ public class Lesson1_Intro {
         System.out.println("a not equal to b? "+(a!=b));
 
         int lol = 10;
+         */ // more to add here
+
+        //Input
+        //To input we must add a library first to allow for user input
+        Scanner input =new Scanner(System.in); //Creates an object that will accept user input
+        System.out.println("Enter First Number:");
+        float num1 =  input.nextFloat(); //reads the next float from the user and assigns it to num1
+        System.out.println("Enter next number:");
+        float num2 = input.nextFloat(); //reads the next float from the user and assigns it to num2
+        System.out.println("Addition -> "+ (num1 + num2));
+        System.out.println("Subtraction -> "+ (num1 - num2));
+        System.out.println("Multiplication -> "+ (num1 * num2));
+        System.out.println("Divide -> "+ (num1 / num2));
+
 
     }
 }
