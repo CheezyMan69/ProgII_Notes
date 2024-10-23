@@ -17,7 +17,7 @@ public class Lesson3_Arrays {
 
         /*Arrays ----------------------------------
         int [] arr = {12,10,123,13,65,45,17,1,100,32,5,111};//this is a static declaration meaning everything is defined
-        int max = arr[0];
+        int max = arr[0];           //Initializes the max to be the first element
         for(int i = 0; i<arr.length;i++){
             if(max<arr[i]){
                 max = arr[i];
@@ -25,7 +25,7 @@ public class Lesson3_Arrays {
         }
         System.out.println("Max -> "+max);
 
-        int min = arr[0];
+        int min = arr[0];           //Initializes the min to be the first element
         for(int i = 0; i<arr.length;i++){
             if (min>arr[i]){
                 min = arr[i];
@@ -56,6 +56,7 @@ public class Lesson3_Arrays {
         /*ARRAY ANALYSIS ------Do not upload this please---------------
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the array analyzer\nPlease Enter a Size: ");
+
         int size = input.nextInt();     // allows the user to define the size
         System.out.println("Step 1 complete\n2. Inputting Elements");
         double[] arr = new double[size];
@@ -65,8 +66,8 @@ public class Lesson3_Arrays {
         }
         System.out.println("Step 2 Complete\nANALYSIS START");
 
-        double max = arr[0];            //sets the max to be the first element
-        double min = arr[0];            //sets the min to be the first element (if set to 0, it doesn't work [i tried])
+        double max = arr[0];            //Initializes the max to be the first element
+        double min = arr[0];            //Initializes the min to be the first element (if set to 0, it doesn't work [i tried])
         System.out.println("---MAX MIN ANALYSIS---");
         for(int i = 0;i< arr.length;i++){
             if(max<arr[i]){             //if the max is smaller than the element
@@ -99,6 +100,62 @@ public class Lesson3_Arrays {
         System.out.println("Product -> "+prod);
 
         System.out.println("ANALYSIS COMPLETE");
+        */
+
+        /*Even Odd Arrays -------------------------------
+        int [] arr = {10,20,33,42,56,69,73,82,99,101,110};
+        int eCount = 0, oCount = 0;         //counts for each odd and even
+        for(int i = 0; i< arr.length;i++){
+            if(arr[i]%2==0){
+                eCount++;                   //if the element is even the even count increments
+            }else {
+                oCount++;                   //if the element is odd the odd count increments
+            }
+        }
+        int [] eArray = new int [eCount];   //creates an even array with the size of the even count
+        int [] oArray = new int [oCount];   //creates an odd array with the size of the odd count
+        int eIndex = 0, oIndex = 0;         //Initializes both indexes to 0
+
+        for(int i = 0;i< arr.length;i++){
+            if(arr[i]%2==0){
+                eArray[eIndex]=arr[i];      //if the element is even then it assigns it to the even array
+                                            //in the specific even index
+                eIndex++;                   //Increments the even index to add the next even element correctly
+            }else {
+                oArray[oIndex]=arr[i];      //if the element is odd then it assigns it to the odd array
+                                            //in the specific odd index
+                oIndex++;                   //Increments the odd index to add the next odd element correctly
+            }
+        }
+        System.out.println("Printing Even Nums: ");
+        System.out.print("{");
+        for (int i = 0;i<eArray.length;i++){
+            System.out.print(eArray[i]+", ");   //prints each element of the even array in one line
+        }
+        System.out.print("}\n");
+        System.out.println("Printing Odd Nums: ");
+        System.out.print("{");
+        for (int i = 0;i<oArray.length;i++){
+            System.out.print(oArray[i]+", ");   //prints each element of the odd array in one line
+        }
+        System.out.print("}");
+        */
+
+        /*Reversing Arrays ----------------------------
+        int [] arr = {10,20,33,42,56,69,73,82,99,101,110};
+        int temp;                           //this variable is essential for the reverse process
+        for(int i=0; i<arr.length/2;i++){   //i<arr.length/2 because it will only need to reach the middle to be
+                                            //fully reversed
+            temp = arr[i];                  //assigns the first value to temp
+            arr[i]= arr[arr.length -1 -i];  //assigns the last value to the first value (reversing it)
+            arr[arr.length -1 -i] = temp;   //assigns the temp value to the last value (reversing it)
+        }
+        System.out.println("Print in reverse: ");
+        System.out.print("{");
+        for(int i = 0; i< arr.length;i++){
+            System.out.print(arr[i]+", ");  //Prints the reversed array in one line
+        }
+        System.out.print("}\n");
         */
     }
 }
