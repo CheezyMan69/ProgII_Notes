@@ -56,24 +56,24 @@ public class Lesson3_Arrays {
         /*ARRAY ANALYSIS ------Do not upload this please---------------
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the array analyzer\nPlease Enter a Size: ");
-        int size = input.nextInt();
+        int size = input.nextInt();     // allows the user to define the size
         System.out.println("Step 1 complete\n2. Inputting Elements");
         double[] arr = new double[size];
         for(int i = 0 ; i<arr.length;i++){
             System.out.println("Enter value for index "+i);
-            arr[i]= input.nextDouble();
+            arr[i]= input.nextDouble(); //allows the user to enter each element in the array
         }
         System.out.println("Step 2 Complete\nANALYSIS START");
 
-        double max = arr[0];
-        double min = arr[0];
+        double max = arr[0];            //sets the max to be the first element
+        double min = arr[0];            //sets the min to be the first element (if set to 0, it doesn't work [i tried])
         System.out.println("---MAX MIN ANALYSIS---");
         for(int i = 0;i< arr.length;i++){
-            if(max<arr[i]){
-                max = arr[i];
+            if(max<arr[i]){             //if the max is smaller than the element
+                max = arr[i];           //max is changed and set to be tht specific element
             }
-            if (min>arr[i]){
-                min = arr[i];
+            if (min>arr[i]){            //if the min is bigger then the element
+                min = arr[i];           //min is changed and set to be that specific element
             }
         }
         System.out.println("Max Element -> "+max);
@@ -81,19 +81,19 @@ public class Lesson3_Arrays {
 
         System.out.println("---ODD EVEN ANALYSIS---");
         for (int i = 0;i< arr.length;i++){
-            if(arr[i]%2==0){
+            if(arr[i]%2==0){            //if the element can be fully divided by 2 then it is even
                 System.out.println("Element "+arr[i]+" with Index "+i+" Is EVEN");
-            }else{
+            }else{                      //if the element cannot be fully divided by 2 then it it is odd
                 System.out.println("Element "+arr[i]+" with Index "+i+" Is ODD");
             }
         }
 
         System.out.println("---SUM PRODUCT ANALYSIS---");
-        double sum = 0;
-        double prod = 1;
+        double sum = 0;                 //Initializes the sum to be 0
+        double prod = 1;                //Initializes the product to be 1 (if 0 = no work [anything times 0 is 0 dumby])
         for (int i = 0;i< arr.length;i++){
-            sum+= arr[i];
-            prod*= arr[i];
+            sum+= arr[i];               //Adds the element to the sum (increments by the element)
+            prod*= arr[i];              //multiplies the product by the element -> changing its value
         }
         System.out.println("Sum -> "+sum);
         System.out.println("Product -> "+prod);
