@@ -5,7 +5,7 @@
     - If...Else
     - Nested If-else Statements
     - Switch cases
-    - Loops - While , do-while
+    - Loops - While , do-while, for
    These operate and start functioning when they meet a specific condition
    or criteria. If their condition is not met, then they do not run and moves to the
    next segment of code.
@@ -168,5 +168,14 @@ public class Lesson2_ControlStatements {
         }
         */
 
+        //Nested For loop ---------------------------
+        int n = 5;
+        for(int i =1; i<=n;i++){        //for every i<=n it will run the other for loop as well
+
+            for (int j=1;j<=i;j++){
+                System.out.print("* "); //prints a * until the value of i is reached
+            }
+            System.out.println(" ");
+        }
     }
 }
