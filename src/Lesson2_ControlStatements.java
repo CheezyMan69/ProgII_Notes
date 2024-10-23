@@ -32,7 +32,7 @@ public class Lesson2_ControlStatements {
         }
         */
 
-        // If else with user input
+        // If else with user input ---------------------------
         /*
         Scanner num =new Scanner(System.in);
         System.out.println("Enter first Number");
@@ -47,7 +47,7 @@ public class Lesson2_ControlStatements {
         }
          */
 
-        //Nested IF-Else statement
+        //Nested IF-Else statement -------------------------
         /*
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a Number:");
@@ -67,7 +67,7 @@ public class Lesson2_ControlStatements {
         }
         */
 
-        //Logical Operators || (OR), && (AND), !(NOT)
+        //Logical Operators || (OR), && (AND), !(NOT) -----
         /*
         Scanner input = new Scanner(System.in);
         System.out.println("Enter num greater than 7");
@@ -79,7 +79,7 @@ public class Lesson2_ControlStatements {
         }
         */
 
-        //Switch Cases
+        //Switch Cases ---------------------------------
         /*
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter your marks: ");
@@ -103,7 +103,7 @@ public class Lesson2_ControlStatements {
         System.out.println("Your grade is "+grade);
         */
 
-        // Age calc
+        // Age calc ----------------------------------
         /*
         Scanner input = new Scanner(System.in);
         System.out.println("Enter Your Age: ");
@@ -119,11 +119,13 @@ public class Lesson2_ControlStatements {
         }
         */
 
-        //Loops - i'll add more in a bit
-        double i = 10;
+        //While Loops - i'll add more in a bit -------
+        /*
+        double i = 10;      //Initialize the variable first
         double n =1;
-        while (i<21){
-            n *= i;
+        while (i<21){       // it will check if the condition is true and if it is it will run the
+                            // code in it
+            n *= i;         //If you create a new variable inside, you will not be able to use it out
             i++;
         }
         System.out.println("Product = "+n);
@@ -139,5 +141,32 @@ public class Lesson2_ControlStatements {
             start ++;
         }
         System.out.println("Sum of range -> "+temp);
+        */
+
+        //Do-While loops --------------------------------
+
+        /*For Loops -------------------------------------
+        // they function the same as in C
+        //for(initialize; condition to follow, increment or decrement)
+        for(int i = 1;i<=10;i++){
+            System.out.println("i -> "+i);
+        }
+        for(int j = 20;j>=10;j--){
+            System.out.println("j -> "+j);
+        }
+
+        String hi = "Hello World"; //Strings are an array of characters put together
+        System.out.println("Length of hi -> "+hi.length()); //this function finds the length of the string
+        System.out.println("Char at Index 3 -> "+hi.charAt(3)); //This function finds the specific letter in
+                                                                //that array
+        for(int i= 0;i<hi.length();i++){ //We can find all the characters using a for loop
+            System.out.println("Index "+i+" has the character "+hi.charAt(i));
+        }
+
+        for (int i = 0;i<hi.length();i++){  //Initialize i = 0;only works when i is less than the length of hi;increment i
+            System.out.print(hi.charAt(i)); //this way we can print Hello World in one line
+        }
+        */
+
     }
 }
