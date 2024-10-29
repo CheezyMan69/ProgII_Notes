@@ -5,7 +5,9 @@ There are multiple ways to declare them:
     - Dynamic = this sets the defining for later meaning the user can input the size and the elements
                 when they are asked to without changing the code
 
-Arrays can get really massive so they tend to take up a bit of memory space
+Arrays can get really massive so they tend to take up a bit of memory space.
+Arrays can be multidimensional.
+Arrays can hold multiple elements of one type.
 
  */
 
@@ -168,5 +170,46 @@ public class Lesson3_Arrays {
             }
         }
         */
+
+        // 2D Arrays -------------------------------------
+        /*
+        int [] [] matrix = {                            //This is how to initialize 2D array
+                {1,2,3},                                //Row 0
+                {4,5,6},                                //Row 1
+                {7,8,9}                                 //Row 2
+        };
+        System.out.println("Matrix: ");
+        for (int i = 0; i< matrix.length;i++){          //i is the rows of the matrix
+            System.out.println("For row "+(i+1)+" the elements are: ");
+            for (int j = 0; j<matrix[i].length;j++){    //this loop runs until the row is finished
+                System.out.println(matrix[i][j]);       //prints the elements in the row
+            }
+        }
+        */
+
+        /*
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number of rows for your matrix: ");
+        int row = input.nextInt();                      //Initializes rows to be a user inputted int
+        System.out.println("Enter the number of columns for your matrix: ");
+        int columns = input.nextInt();                  //Initializes Columns to be a user inputted int
+
+        int [][] matrix2 = new int [row][columns];      //Initializes the matrix to be as big as the user made it to be
+
+        for(int i = 0;i<matrix2.length;i++){            //Loop to run for each row
+            for (int j = 0; j<matrix2[i].length;j++){
+                System.out.println("Enter value for position "+i+", "+j);
+                matrix2[i][j] = input.nextInt();        //User inputs value straight into the matrix position
+            }
+        }
+        System.out.println("Matrix: ");
+        for (int i = 0; i< matrix2.length;i++){          //i is the rows of the matrix
+            System.out.println("For row "+(i+1)+" the elements are: ");
+            for (int j = 0; j<matrix2[i].length;j++){    //this loop runs until the row is finished
+                System.out.println(matrix2[i][j]);       //prints the elements in the row
+            }
+        }
+        */
+
     }
 }
