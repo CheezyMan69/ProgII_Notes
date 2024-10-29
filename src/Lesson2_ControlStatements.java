@@ -168,7 +168,7 @@ public class Lesson2_ControlStatements {
         }
         */
 
-        //Nested For loop ---------------------------
+        /*Nested For loop ---------------------------
         int n = 5;
         for(int i =1; i<=n;i++){        //for every i<=n it will run the other for loop as well
 
@@ -177,5 +177,16 @@ public class Lesson2_ControlStatements {
             }
             System.out.println(" ");
         }
+
+        for (int i = 1; i<=n;i++){
+            for(int k = n-i;k>=1;k--){
+                System.out.print(" ");
+            }
+            for(int j =1; j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+        */
     }
 }
