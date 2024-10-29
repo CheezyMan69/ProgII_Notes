@@ -157,5 +157,16 @@ public class Lesson3_Arrays {
         }
         System.out.print("}\n");
         */
+
+        /*Arrays and Nested loops ----------------------------
+        String [] cars = {"Ferrari","Lambo","Audi","Porsche"};  //An array of strings
+        for(int i = 0; i< cars.length;i++){                     //Loop to run through the array values
+            if (cars[i] == "Audi"){                             //Will only run if the current value equals "Audi"
+                for (int j = 0; j < cars[i].length();j++){      //Loop to run through each character of the value
+                    System.out.println(cars[i].charAt(j));      //Prints 1 letter of the string then runs loop again
+                }
+            }
+        }
+        */
     }
 }
