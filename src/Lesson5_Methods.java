@@ -8,7 +8,7 @@ Method
         - Parameters
             These tell the method what data to use in the piece of code to keep it
             adaptive. They are specified after the name of the method in the ().
-            You can use multiple parameters with different types, they must be sepereated
+            You can use multiple parameters with different types, they must be separated
             by a , (comma).
 
         - Return value
@@ -26,13 +26,13 @@ Method Overloading
 
 
     I don't want to do this anymore, but I will lol
-    i will do the code a bit later
+    I will do the code a bit later
     give me time plz
 
  */
 
 
-
+import java.util.Scanner;
 
 public class Lesson5_Methods {
     public static void main(String[] args){
