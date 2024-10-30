@@ -24,6 +24,14 @@ Method Overloading
     before the piece of code. This allows us to have the same name for a method but different use
     cases.
 
+Scope and Method Scope
+    What is scope? Scope is the area where a variable is accessible. Because java works line by line, you can not
+    access a variable declared later, before. For example, X cannot be used before it is initialized,but it can be used
+    after. Scope also applies for blocks of code like for loops, if-else, while, and so on. If a variable is declared
+    inside a block, it will ONLY be usable inside that block of code, not outside or before.
+
+Recursion
+    It is a technique that calls the same method
 
     I don't want to do this anymore, but I will lol
     I will do the code a bit later
