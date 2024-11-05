@@ -31,7 +31,7 @@ Scope and Method Scope
     inside a block, it will ONLY be usable inside that block of code, not outside or before.
 
 Recursion
-    It is a technique that calls the same method
+    It is a technique that calls the same method to run again, with different parameters
 
     I don't want to do this anymore, but I will lol
     I will do the code a bit later
@@ -44,11 +44,22 @@ import java.util.Scanner;
 
 public class Lesson5_Methods {
     public static void main(String[] args){
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter 1st value: ");
+        double num1 = input.nextInt();
+        System.out.println("Enter 2nd Value: ");
+        double num2 = input.nextInt();
+        System.out.println("The sum of the values are:\n"+add(num1,num2));
     }
 
-    public static void add(){
+    //This is an example of a simple method returning an int
+    public static int add(int x,int y){
+        return x+y;
+    }
 
+    //This is an example of method overloading (same name different output)
+    public static double add(double x, double y){
+        return x+y;
     }
 }
 
